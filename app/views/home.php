@@ -3,7 +3,7 @@
 <div class="row">
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-info">
+            <div class="small-box bg-danger">
               <div class="inner">
                 <p>Buku</p>
                 <h3><?= hitung('buku'); ?>
@@ -18,7 +18,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-success">
+            <div class="small-box bg-danger">
               <div class="inner">
                 <p>Kategori Buku</p>
                 <h3><?= hitung('kategoribuku'); ?>
@@ -33,7 +33,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-warning">
+            <div class="small-box bg-danger">
               <div class="inner">
                 <p>Buku Yang Dipinjam</p>
                 <h3><?= hitung('peminjaman'); ?>
