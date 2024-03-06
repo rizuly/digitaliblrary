@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Mar 2024 pada 08.11
+-- Waktu pembuatan: 06 Mar 2024 pada 09.14
 -- Versi server: 10.4.27-MariaDB
 -- Versi PHP: 8.2.0
 
@@ -40,7 +40,8 @@ CREATE TABLE `buku` (
 --
 
 INSERT INTO `buku` (`BukuID`, `Judul`, `Penulis`, `Penerbit`, `TahunTerbit`) VALUES
-(1, 'Peci Miring', 'Hariri, Didik L.', 'Iiman Real', 2022);
+(1, 'Peci Miring', 'Hariri, Didik L.', 'Iiman Real', 2022),
+(2, 'Kocak Gemink', 'ikiadi', 'pt.wikwok', 1998);
 
 -- --------------------------------------------------------
 
@@ -58,7 +59,8 @@ CREATE TABLE `kategoribuku` (
 --
 
 INSERT INTO `kategoribuku` (`KategoriID`, `NamaKategori`) VALUES
-(1, 'Biografi');
+(1, 'Biografi'),
+(2, 'romance');
 
 -- --------------------------------------------------------
 
@@ -77,7 +79,8 @@ CREATE TABLE `kategoribuku_relasi` (
 --
 
 INSERT INTO `kategoribuku_relasi` (`KategoriBukuID`, `BukuID`, `KategoriID`) VALUES
-(1, 1, 1);
+(1, 1, 1),
+(2, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -112,6 +115,13 @@ CREATE TABLE `peminjaman` (
   `TanggalPengembalian` date DEFAULT NULL,
   `StatusPeminjaman` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `peminjaman`
+--
+
+INSERT INTO `peminjaman` (`PeminjamanID`, `UserID`, `BukuID`, `TanggalPeminjaman`, `TanggalPengembalian`, `StatusPeminjaman`) VALUES
+(2, 4, 1, '2024-03-06', '2024-03-06', 'Sudah di Kembalikan');
 
 -- --------------------------------------------------------
 
@@ -215,19 +225,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `BukuID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `BukuID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `kategoribuku`
 --
 ALTER TABLE `kategoribuku`
-  MODIFY `KategoriID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `KategoriID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `kategoribuku_relasi`
 --
 ALTER TABLE `kategoribuku_relasi`
-  MODIFY `KategoriBukuID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `KategoriBukuID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `koleksipribadi`
@@ -239,7 +249,7 @@ ALTER TABLE `koleksipribadi`
 -- AUTO_INCREMENT untuk tabel `peminjaman`
 --
 ALTER TABLE `peminjaman`
-  MODIFY `PeminjamanID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `PeminjamanID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `ulasanbuku`

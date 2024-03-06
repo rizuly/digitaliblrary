@@ -35,4 +35,5 @@ class PeminjamanController extends Controller
 			redirectTo('error', 'Maaf, Buku gagal di kembalikan!', '/peminjaman');
 		}
   }
+  
 }

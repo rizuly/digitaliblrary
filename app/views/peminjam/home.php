@@ -5,6 +5,7 @@
             <div class="card">
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
+                <a href="<?= urlTo('/peminjam/cetakpeminjam'); ?>" class="btn btn-success float-left">Cetak Laporan</a>
                   <thead>
                   <tr>
                     <th>#</th>
