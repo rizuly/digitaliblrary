@@ -44,16 +44,6 @@
                   	<?php $no++; ?>
                   <?php endforeach ?>
                   </tbody>
-                  <tfoot>
-                  <tr>
-                    <th>#</th>
-                    <th>Nama Lengkap</th>
-                    <th>Email</th>
-                    <th>Alamat</th>
-                    <th>Role</th>
-                    <th>Tindakan</th>
-                  </tr>
-                  </tfoot>
                 </table>
               </div>
               <!-- /.card-body -->

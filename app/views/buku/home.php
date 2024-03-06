@@ -52,15 +52,6 @@
                   	<?php $no++; ?>
                   <?php endforeach ?>
                   </tbody>
-                  <tfoot>
-                  <tr>
-                    <th>#</th>
-                    <th>Kategori</th>
-                    <th>Judul</th>
-                    <th>Penulis</th>
-                    <th>Tindakan</th>
-                  </tr>
-                  </tfoot>
                 </table>
               </div>
               <!-- /.card-body -->

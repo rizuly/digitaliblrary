@@ -27,16 +27,6 @@
                     </tr>
                   <?php endforeach ?>
                   </tbody>
-                  <tfoot>
-                  <tr>
-                    <th>#</th>
-                    <th>Nama Peminjam</th>
-                    <th>Alamat Peminjam</th>
-                    <th>Buku Yang di Pinjam</th>
-                    <th>Tanggal di Kembalikan</th>
-                    <th>Status</th>
-                  </tr>
-                  </tfoot>
                 </table>
               </div>
               <!-- /.card-body -->

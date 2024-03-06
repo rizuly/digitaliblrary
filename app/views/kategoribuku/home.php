@@ -41,13 +41,6 @@
                     </tr>
                   <?php endforeach ?>
                   </tbody>
-                  <tfoot>
-                  <tr>
-                    <th>#</th>
-                    <th>Nama Kategori</th>
-                    <th>Tindakan</th>
-                  </tr>
-                  </tfoot>
                 </table>
               </div>
               <!-- /.card-body -->
