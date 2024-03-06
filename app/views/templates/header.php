@@ -109,21 +109,21 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="<?= urlTo('/perpustakaan'); ?>" class="nav-link <?= menuActive(['perpustakaan']); ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far fa fa-book nav-icon"></i>
                   <p>Daftar Buku</p>
                 </a>
               </li>
               
               <li class="nav-item">
                 <a href="<?= urlTo('/peminjaman'); ?>" class="nav-link <?= menuActive(['peminjaman']); ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far fa fa-handshake nav-icon"></i>
                   <p>Buku Pinjaman</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="<?= urlTo('/koleksi'); ?>" class="nav-link <?= menuActive(['koleksi']); ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far fa fa-archive nav-icon"></i>
                   <p>Koleksi Pribadi</p>
                 </a>
               </li>

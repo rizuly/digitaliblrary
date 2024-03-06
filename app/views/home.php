@@ -6,7 +6,8 @@
             <div class="small-box bg-info">
               <div class="inner">
                 <p>Buku</p>
-                <h3><?= hitung('buku'); ?></h3>
+                <h3><?= hitung('buku'); ?>
+                <i class="far fa fa-book"></i></h3>
 
               </div>
               <div class="icon">
@@ -20,7 +21,8 @@
             <div class="small-box bg-success">
               <div class="inner">
                 <p>Kategori Buku</p>
-                <h3><?= hitung('kategoribuku'); ?></h3>
+                <h3><?= hitung('kategoribuku'); ?>
+                <i class="far fa-bookmark"></i></h3>
 
               </div>
               <div class="icon">
@@ -34,7 +36,8 @@
             <div class="small-box bg-warning">
               <div class="inner">
                 <p>Buku Yang Dipinjam</p>
-                <h3><?= hitung('peminjaman'); ?></h3>
+                <h3><?= hitung('peminjaman'); ?>
+                <i class="far fa fa-handshake"></i></h3>
 
               </div>
               <div class="icon">
@@ -48,7 +51,8 @@
             <div class="small-box bg-danger">
               <div class="inner">
                 <p>User</p>
-                <h3><?= hitung('users'); ?></h3>
+                <h3><?= hitung('users'); ?>
+                <i class="far fa fa-user"></i></h3>
 
               </div>
               <div class="icon">
